@@ -21,8 +21,8 @@ export default function Hero() {
                     className="w-full h-full"
                 >
                     <img
-                        src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=1200"
-                        alt="Minimalist Interior"
+                        src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=1600"
+                        alt="Luxury Minimalist Interior"
                         className="w-full h-full object-cover grayscale transition-all duration-1000 hover:grayscale-0"
                     />
                     <div className="absolute inset-0 border-[20px] border-cream pointer-events-none"></div>
