@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --color-charcoal: #1A1A1A;
+  --color-cream: #FDFCF0;
+  --color-gold: #C5A059;
+
+  --font-serif: var(--font-playfair), "Playfair Display", serif;
+  --font-sans: var(--font-inter), "Inter", sans-serif;
+}
+
+:root {
+  --background: #FDFCF0;
+  --foreground: #1A1A1A;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply bg-cream text-charcoal font-sans antialiased;
+    background-color: var(--background);
+    color: var(--foreground);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif;
+  }
+
+  ::selection {
+    @apply bg-gold/20 text-charcoal;
+  }
+}
+
+/* Custom Utilities */
+@layer utilities {
+  .tracking-widest-plus {
+    letter-spacing: 0.3em;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
